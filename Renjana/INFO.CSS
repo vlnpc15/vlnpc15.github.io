@@ -17,31 +17,63 @@ div.header{
     box-shadow: 0 13px 1rem rgb(255, 255, 255), inset 0 -1px 0 rgba(255, 255, 255, 0.815);
 
 }
-div.header a{
-    float: left;
-    display: block;
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+li a, .dropbtn {
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
 }
-div.header a:hover{
-    background-color: darkgrey;
-    
+  
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: darkgray;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: darkgray;
+}
+  
+.dropdown:hover .dropdown-content {
+      display: block;
 }
 h1{
     color: black;
     text-shadow: 6px 4px #b9abab9c;
 }
-ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
 ol{
-    font-size: 2em;
-    margin-left: 80px;
+    font-size: 150%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .inform {
     background-color: gainsboro;
@@ -49,12 +81,12 @@ ol{
     margin-right: 4%;
 }
 h2{
-    font-size: 3em;
+    font-size: 200%;
     text-align: center;
     text-shadow: 6px 4px #b9abab9c;
 }
 .tentang{
-    font-size: 40px;
+    font-size: 180%;
     font-weight: bolder;
     margin-top: 5%;
     margin-left: 4%;
@@ -63,11 +95,11 @@ h2{
     margin-top: 3%;
     margin-bottom: 100px;
     padding: 2px 2px;
-    font-size: xx-large;
+    font-size: 150%;
     font-style: oblique;
     text-shadow: 3em;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 4%; 
+    margin-left: 0%; 
 }
 img{
     margin-left: 19px;

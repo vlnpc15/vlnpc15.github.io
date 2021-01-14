@@ -17,23 +17,54 @@ div.header{
     box-shadow: 0 13px 1rem rgb(255, 255, 255), inset 0 -1px 0 rgba(255, 255, 255, 0.815);
 
 }
-div.header a{
-    float: left;
-    display: block;
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+li a, .dropbtn {
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
 }
-div.header a:hover{
-    background-color: darkgrey;
-    
+  
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: darkgray;
 }
-ul{
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
     display: flex;
-    justify-content: space-around;
-    list-style: none;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: darkgray;
+}
+  
+.dropdown:hover .dropdown-content {
+      display: block;
 }
 h1{
     color: black;
