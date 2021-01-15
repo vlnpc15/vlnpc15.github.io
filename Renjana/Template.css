@@ -89,7 +89,7 @@ h1{
     font-size: 30px;
     flex: 0%;
 }
-.teks {
+.describe {
     margin-bottom: 100px;
     padding: 2px 2px;
     font-size: xx-large;
@@ -99,4 +99,40 @@ h1{
     align-content: center;
     text-align-last: center;
     margin-left: 50px;
+}
+div.video{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+video.play{
+    width: 70%;
+    height: 60%;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+.tentang{
+    font-size: 150%;
+    font-weight: bolder;
+    margin-left: 4%;
+    color: white;
+    height: fit-content;
+}
+.teks {
+    padding: 2px 2px;
+    font-size: 150%;
+    font-style: oblique;
+    text-shadow: 3em;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: black;
+    margin-top: 7%;
+}
+.teks table{
+    margin-left: 2%;
+    padding: 5px;
 }
